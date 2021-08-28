@@ -1,5 +1,3 @@
-#Linkessh
-
 # Use the Request library
 import requests
 # Set the target webpage
@@ -25,7 +23,7 @@ print("**********")
 print("Status code:")
 print("\t *", r.status_code)
 
-#scrappy attempt (0 img scrapped)
+#use scrapy web crawler search for image links in the website
 import scrapy
 
 class NewSpider(scrapy.Spider):
@@ -66,22 +64,17 @@ class NewSpider(scrapy.Spider):
 
  )
 
+import requests
 
+class TestApplication(request.TestCase):
 
+	def test_upper(self):
+		self.asserEqual('foo'.upper(),'FOO')
 
+	
+	def test_isupper(self):
+		self.assertTrue('FOO'.isupper())
+		self.assertFalse('Foo'.isupper())
 
-
-
-
-
-#Yuze
-
-
-
-
-
-
-
-
-
-#Denzel
+if __name__== '__main__':
+	requests.main()
