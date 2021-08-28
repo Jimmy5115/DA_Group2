@@ -63,18 +63,3 @@ class NewSpider(scrapy.Spider):
        callback=self.parse
 
  )
-
-import requests
-
-class TestApplication(request.TestCase):
-
-	def test_upper(self):
-		self.asserEqual('foo'.upper(),'FOO')
-
-	
-	def test_isupper(self):
-		self.assertTrue('FOO'.isupper())
-		self.assertFalse('Foo'.isupper())
-
-if __name__== '__main__':
-	requests.main()
