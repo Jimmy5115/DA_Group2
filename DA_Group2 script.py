@@ -8,7 +8,7 @@ print(r.text)
 # This will get the status code
 print("Status code:")
 print("\t *", r.status_code)
-# This will just get just the headers
+# This will get the headers
 h = requests.head(url)
 print("Header:")
 print("**********")
