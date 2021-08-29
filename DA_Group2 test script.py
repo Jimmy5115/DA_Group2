@@ -15,8 +15,6 @@ class TestCase(unittest.TestCase):
       'url'            : 'https://brickset.com/sets/year-1999',
       'body'           : '{"error": "reason"}',
       'status'         : 200,
-      'content_type'   : 'application/json',
-      'adding_headers' : {'X-Foo': 'Bar'}
     })
 # The get() method sends a GET request to the specified url.
     response = requests.get('https://brickset.com/sets/year-1999')
