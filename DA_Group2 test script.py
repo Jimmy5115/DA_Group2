@@ -18,8 +18,8 @@ class TestCase(unittest.TestCase):
       'content_type'   : 'application/json',
       'adding_headers' : {'X-Foo': 'Bar'}
     })
-
+# The get() method sends a GET request to the specified url.
     response = requests.get('https://brickset.com/sets/year-1999')
-
+# self.assertEqual forms a test assertion which is used to continue the execute if the given condition evaluates to True
     self.assertEqual({'error': 'reason'}, response.json())
     self.assertEqual(200, response.status_code)
