@@ -5,6 +5,9 @@ url = "https://brickset.com/sets/year-1999"
 r = requests.get(url)
 # This will get the full page
 print(r.text)
+# This will get the status code
+print("Status code:")
+print("\t *", r.status_code)
 # This will just get just the headers
 h = requests.head(url)
 print("Header:")
