@@ -1,11 +1,13 @@
+# Import libraries for unit testing, requests and responses
 import unittest
 
 import requests
 import responses
 
-
+# Create a test class for general scaffolding to test the functions
 class TestCase(unittest.TestCase):
-
+# Mock the requests module
+# Left of the colon are requests and right of the colon are responses
   @responses.activate
   def testExample(self):
     responses.add(**{
